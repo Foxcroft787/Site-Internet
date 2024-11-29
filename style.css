@@ -115,3 +115,35 @@ footer {
 .hidden {
     display: none;
 }
+
+/* Style pour le bandeau */
+header .banner {
+
+    display: flex; /* Utilisation du flexbox pour aligner l'image et le texte */
+    align-items: center; /* Aligner verticalement l'image et le texte */
+    justify-content: flex-start; /* Assure que l'image et le texte sont à gauche */
+    padding: 10px 20px; /* Espacement autour du contenu */
+    height: 60px; /* Hauteur fixe du bandeau */
+}
+
+/* Style pour l'image du bandeau */
+header .banner-img {
+    height: 100px; /* Taille de l'image (tu peux ajuster cette valeur selon tes besoins) */
+    width: auto; /* Laisser la largeur s'ajuster automatiquement pour garder les proportions */
+    margin-right: 15px; /* Espacement entre l'image et le texte */
+}
+
+/* Style pour le texte du bandeau */
+header h1 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+}
+
+/* Style pour le lecteur audio en bas à droite */
+audio {
+    position: fixed;   /* Assure que l'élément est fixé à une position absolue dans la fenêtre */
+    bottom: 20px;      /* Positionné à 20px du bas de la fenêtre */
+    right: 20px;       /* Positionné à 20px de la droite de la fenêtre */
+    z-index: 1000;     /* Garantit que le lecteur est au-dessus des autres éléments */
+    border-radius: 5
